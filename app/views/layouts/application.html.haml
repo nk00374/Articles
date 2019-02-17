@@ -16,13 +16,12 @@
     = csrf_meta_tags
 
   %body
-    .header
-      -#Renders the header
-      = render 'shared/header'
-      .article
-        -#Content rendered depeneding on controller actions
-        = yield
-      .footer
-        -#Renders the footer
-        -# = render 'shared/footer'
+    -#Renders the header
+    = render 'shared/header'
+    
+    -#Content rendered depeneding on controller actions
+    = yield
+
+    -#Renders the footer
+    -# = render 'shared/footer'
 
