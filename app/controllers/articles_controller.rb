@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
     @article4 = JSON.parse(file3)
   end
 
-  def ariticle5
+  def article5
     file4 = File.read('app/assets/javascripts/article-5.json')
     @article5 = JSON.parse(file4)
   end

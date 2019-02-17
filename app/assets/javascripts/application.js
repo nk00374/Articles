@@ -15,3 +15,9 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(e){
+    //When the mouse goes off the navbar toggle button, it will not be highlighted
+    $(".navbar-toggle").mouseup(function(){
+    	$(this).blur();
+	})
+});

@@ -27,6 +27,9 @@ $navbar-background: #323232;
 /*Toggle button background colour */
 $toggle-active-background: #3c3c3c;
 
+* {
+	font-family: $font !important;
+}
 /*Sets the background color*/
 body {
   background: $warm-colour;
@@ -46,9 +49,6 @@ h1 {
 	margin:0;
 }
 
-
-
-
 /* NAVBAR 
  ======================================*/
 
@@ -57,7 +57,7 @@ h1 {
    margin is added to prevent white space
    opacity is added for design*/
 .navbar {
-	position: fixed;
+	position: absolute;
 	width:100%;
     margin-bottom: 0!important;
     opacity: 0.85;

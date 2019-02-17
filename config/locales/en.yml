@@ -33,3 +33,10 @@ en:
   app_title: "Articles"
   app_description: "A news site that renders random articles, and has the ability for the user to rank the articles once they have read them all."
   hello: "Hello world"
+  shared:
+    header:
+      article1: "Article 1"
+      article2: "Article 2"
+      article3: "Article 3"
+      article4: "Article 4"
+      article5: "Article 5"

@@ -13,11 +13,11 @@
     #navbar-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         -#Links that is in my navbar
-        -#%li= link_to t('.article1'), contact_path
-        -#%li= link_to t('.article2'), contact_path
-        -#%li= link_to t('.article3'), contact_path
-        -#%li= link_to t('.article4'), contact_path
-        -#%li= link_to t('.article5'), contact_path
+        %li= link_to t('.article1'), articles_article1_path
+        %li= link_to t('.article2'), articles_article2_path
+        %li= link_to t('.article3'), articles_article3_path
+        %li= link_to t('.article4'), articles_article4_path
+        %li= link_to t('.article5'), articles_article5_path
 -#alerts and notices
 .container#flash
   -flash.each do |name,msg|
