@@ -10,12 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-$(document).ready(function(e){
+$(document).on('turbolinks:load', function() {
     //When the mouse goes off the navbar toggle button, it will not be highlighted
     $(".navbar-toggle").mouseup(function(){
     	$(this).blur();
