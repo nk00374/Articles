@@ -16,13 +16,13 @@
     = csrf_meta_tags
 
   %body
-
-    -#Renders the header
-    -# = render 'shared/header'
-
-    -#Content rendered depeneding on controller actions
-    = yield
-
-    -#Renders the footer
-    -# = render 'shared/footer'
+    .header
+      -#Renders the header
+      = render 'shared/header'
+    .article{:style=> "clear:both;"}
+      -#Content rendered depeneding on controller actions
+      = yield
+    .footer{:style=> "clear:both;"}
+      -#Renders the footer
+      -# = render 'shared/footer'
 

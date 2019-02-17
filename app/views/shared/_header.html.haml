@@ -1,0 +1,25 @@
+%nav.navbar.navbar-default.navbar-static-top{:role => "navigation"}
+  .container-fluid
+    -# Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button#toggle.navbar-toggle{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to image_tag('/assets/EarthLogo.png'), root_path,class: 'navbar-brand'
+      = link_to t('app_title'), root_path, class: 'navbar-brand'
+    -# Collect the nav links, forms, and other content for toggling
+    #navbar-collapse.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        -#Links that is in my navbar
+        -#%li= link_to t('.article1'), contact_path
+        -#%li= link_to t('.article2'), contact_path
+        -#%li= link_to t('.article3'), contact_path
+        -#%li= link_to t('.article4'), contact_path
+        -#%li= link_to t('.article5'), contact_path
+-#alerts and notices
+.container#flash
+  -flash.each do |name,msg|
+    = content_tag :div, msg, class:"alert alert-info"
+
