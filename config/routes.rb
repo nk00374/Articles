@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :rankings
+  get '/stats', to:'rankings#stats', as: 'stats'
   get '/article#1', to:'articles#article1', as: 'article1'
   get '/article#2', to:'articles#article2', as: 'article2'
   get '/article#3', to:'articles#article3', as: 'article3'

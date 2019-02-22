@@ -1,25 +1,9 @@
 class RankingsController < ApplicationController
-  before_action :set_ranking, only: [:show, :edit, :update, :destroy]
+  before_action :set_ranking, only: [:update, :destroy]
+  def stats
 
-  # GET /rankings
-  # GET /rankings.json
-  def index
-    @rankings = Ranking.all
   end
 
-  # GET /rankings/1
-  # GET /rankings/1.json
-  def show
-  end
-
-  # GET /rankings/new
-  def new
-    @ranking = Ranking.new
-  end
-
-  # GET /rankings/1/edit
-  def edit
-  end
 
   # POST /rankings
   # POST /rankings.json
