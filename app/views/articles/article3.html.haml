@@ -5,4 +5,6 @@
 				.page
 					-#Content body. allows the user to edit a review
 					%h1= @article["title"]
-					%p Find me in app/views/articles/article1.html.haml
+					%h3= @article["body"][0]["model"]["text"]
+					- for i in 1.. 8 do
+						%p= @article["body"][i]["model"]["text"]

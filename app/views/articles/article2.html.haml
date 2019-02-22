@@ -5,4 +5,16 @@
 				.page
 					-#Content body. allows the user to edit a review
 					%h1= @article["title"]
-					%p Find me in app/views/articles/article1.html.haml
+					%h3= @article["body"][0]["model"]["text"]
+					-#Changed the default size so that the image is responsive
+					%img{:src=>"#{@url1}", :width=>"100%", :alt=> "#{:@altText1}"}
+					%p
+					%p= @article["body"][2]["model"]["text"]
+					%p= @article["body"][3]["model"]["text"]
+					%img{:src=>"#{@url2}", :width=>"100%", :alt=> "#{:@altText2}"}
+					%p
+					%p= @article["body"][5]["model"]["text"]
+					%img{:src=>"#{@url3}", :width=>"100%", :alt=> "#{:@altText3}"}
+					%p
+					%p= @article["body"][7]["model"]["text"]
+			
