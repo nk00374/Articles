@@ -1,0 +1,16 @@
+= form_for @ranking do |f|
+  - if @ranking.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@ranking.errors.count, "error")} prohibited this ranking from being saved:"
+      %ul
+        - @ranking.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :rank
+    = f.text_field :rank
+  .actions
+    = f.submit 'Save'

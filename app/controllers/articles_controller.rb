@@ -1,5 +1,6 @@
 require 'json'
 class ArticlesController < ApplicationController
+  
   def article1
     file = File.read('app/assets/javascripts/article-1.json')
     @article = JSON.parse(file)
@@ -67,10 +68,5 @@ class ArticlesController < ApplicationController
     end
 
   end
-
-  def ranks 
-
-  end
   
-
 end
