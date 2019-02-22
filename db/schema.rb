@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_22_201449) do
+ActiveRecord::Schema.define(version: 2019_02_22_205352) do
 
   create_table "rankings", force: :cascade do |t|
-    t.string "name"
-    t.integer "rank"
-    t.boolean "read"
+    t.string "name", null: false
+    t.integer "rank", null: false
+    t.boolean "read", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
