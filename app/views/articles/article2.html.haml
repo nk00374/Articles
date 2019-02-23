@@ -1,5 +1,5 @@
 .wrapper
-	.col-md-8.col-md-offset-2
+	.col-md-8.col-md-offset-2.col-xs-12
 		.panel.panel-default
 			.panel-body
 				.page
@@ -17,4 +17,10 @@
 					%img{:src=>"#{@url3}", :width=>"100%", :alt=> "#{:@altText3}"}
 					%p
 					%p= @article["body"][7]["model"]["text"]
-			
+			-#footer
+			.panel-footer
+				.row
+					.col-md-12
+						.btn-group.pull-right
+							= link_to t('.read'), root_path, class: "btn btn-default"
+

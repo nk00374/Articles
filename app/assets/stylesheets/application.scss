@@ -34,7 +34,7 @@ $toggle-active-background: #3c3c3c;
 html, body {
 	background: $warm-colour;
     box-shadow: $shadow-effect;
-    background-size: 100%;
+    background-size: auto;
     min-height: 100%;
 }
 

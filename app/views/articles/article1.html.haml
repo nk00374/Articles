@@ -1,5 +1,5 @@
 .wrapper
-	.col-md-8.col-md-offset-2
+	.col-md-8.col-md-offset-2.col-xs-12
 		.panel.panel-default
 			.panel-body
 				.page
@@ -15,3 +15,11 @@
 					%ul
 						%li= @article["body"][5]["model"]["items"][0]
 						%li= @article["body"][5]["model"]["items"][1]
+			-#footer
+			.panel-footer
+				.row
+					.col-md-12
+						.btn-group.pull-right
+							= link_to t('.read'), root_path, class: "btn btn-default"
+
+

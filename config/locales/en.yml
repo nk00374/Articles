@@ -41,3 +41,6 @@ en:
       article4: "Article 4"
       article5: "Article 5"
       stats: "Rankings"
+  article:
+    article1:
+      read: "read"

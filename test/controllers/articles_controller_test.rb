@@ -2,27 +2,27 @@ require 'test_helper'
 
 class ArticlesControllerTest < ActionDispatch::IntegrationTest
   test "should get article1" do
-    get articles_article1_url
+    get article1_path
     assert_response :success
   end
 
   test "should get article2" do
-    get articles_article2_url
+    get article2_path
     assert_response :success
   end
 
   test "should get article3" do
-    get articles_article3_url
+    get article3_path
     assert_response :success
   end
 
   test "should get article4" do
-    get articles_article4_url
+    get article4_path
     assert_response :success
   end
 
   test "should get ariticle5" do
-    get articles_ariticle5_url
+    get article5_path
     assert_response :success
   end
 

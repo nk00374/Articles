@@ -1,5 +1,5 @@
 .wrapper
-	.col-md-8.col-md-offset-2
+	.col-md-8.col-md-offset-2.col-xs-12
 		.panel.panel-default
 			.panel-body
 				.page
@@ -8,3 +8,9 @@
 					%h3= @article["body"][0]["model"]["text"]
 					- for i in 1.. 8 do
 						%p= @article["body"][i]["model"]["text"]
+			-#footer
+			.panel-footer
+				.row
+					.col-md-12
+						.btn-group.pull-right
+							= link_to t('.read'), root_path, class: "btn btn-default"
