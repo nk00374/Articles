@@ -9,6 +9,8 @@
 						%hr
 						%h4
 							= item.name
+							%small
+								-if item.rank
 							.pull-right
 								%small
 									= time_ago_in_words(item.updated_at) 
@@ -19,6 +21,10 @@
 			.panel-footer
 				.row
 					.col-md-12
-						.btn-group.pull-right
-							
-						
+						= simple_form_for :set, {url: article_rank_path, :method=>:patch } do |f|
+							.btn-group.pull-left
+								= f.select :id, options_for_select([["Article 1", 1], ["Article 2", 2],["Article 3", 3],["Article 4", 4],["Article 5", 5]]), input_html: {class: "form-control"}
+								= f.select :rank, options_for_select([["Very boring", 1], ["Okay", 2],["Good read", 3],["Interesting", 4],["Super Interesting", 5]]), input_html: {class: "form-control"}
+							.btn-group.pull-right
+								= f.button :submit, t(".submit")
+			
