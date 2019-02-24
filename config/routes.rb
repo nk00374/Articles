@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :rankings
+  patch '/article#1/:id', to: 'rankings#updateRead', as: 'article_read'	
   get '/stats', to:'rankings#stats', as: 'stats'
   get '/article#1', to:'articles#article1', as: 'article1'
   get '/article#2', to:'articles#article2', as: 'article2'

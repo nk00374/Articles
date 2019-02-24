@@ -41,6 +41,11 @@ en:
       article4: "Article 4"
       article5: "Article 5"
       stats: "Rankings"
-  article:
-    article1:
-      read: "read"
+  articles:
+    read: "Read"
+    not_read: "Unmark as read"
+  rankings:
+    clear: "Clear all"
+    stats:
+      info: "The order of the articles is set  by the user"
+                

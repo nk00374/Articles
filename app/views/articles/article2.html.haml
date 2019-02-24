@@ -22,5 +22,4 @@
 				.row
 					.col-md-12
 						.btn-group.pull-right
-							= link_to t('.read'), root_path, class: "btn btn-default"
-
+							= button_to @button, {:action=>"updateRead", :controller=>"rankings", :id=>2} , :method=>:patch, class: "btn btn-default"

@@ -1,0 +1,24 @@
+.wrapper
+	.col-md-8.col-md-offset-2.col-xs-12
+		.panel.panel-default
+			.panel-body
+				.page
+					-#Content body. Lists the articles in a ranking order set by the user
+					%h3 You change what you like
+					- @list.each do |item| 
+						%hr
+						%h4
+							= item.name
+							.pull-right
+								%small
+									= time_ago_in_words(item.updated_at) 
+									ago
+					%hr
+				
+			-#footer
+			.panel-footer
+				.row
+					.col-md-12
+						.btn-group.pull-right
+							
+						
