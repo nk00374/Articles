@@ -48,4 +48,7 @@ en:
     clear: "Clear all"
     stats:
       info: "The order of the articles is set  by the user"
-      submit: "Set Rating"          
+      submit: "Set Rating"
+      read: ", Marked as Read"      
+      not_read: ", Haven't read this yet"          
+      instructions: " Set the order of the articles here"
