@@ -10,7 +10,9 @@
 						%h4
 							= item.name
 							%small
-								#{@rating[item.rank]}
+								-if !@rating[item.rank].blank?
+									#{@rating[item.rank]} , 
+
 								-if item.read 
 									#{t(".read")}
 								-else 
@@ -27,7 +29,7 @@
 					.col-md-12
 						= simple_form_for :set, {url: article_rank_path, :method=>:patch } do |f|
 							.btn-group.pull-left
-								= f.select :id, options_for_select([["Article 1", 1], ["Article 2", 2],["Article 3", 3],["Article 4", 4],["Article 5", 5]]), {}, class: "form-control"
+								= f.select :name, options_for_select(["Article 1", "Article 2","Article 3","Article 4","Article 5"]), {}, class: "form-control"
 							.btn-group.pull-left
 								= f.select :rank, options_for_select([["Very boring", 1], ["Okay", 2],["Good read", 3],["Interesting", 4],["Super Interesting", 5]]), {}, class: "form-control"
 							.btn-group.pull-right

@@ -19,5 +19,8 @@
 			.panel-footer
 				.row
 					.col-md-12
+						.btn-group.pull-left
+							%h4
+								#{t(".article")}
 						.btn-group.pull-right
-							= button_to @button, {:action=>"updateRead", :controller=>"rankings", :id=>1} , :method=>:patch, class: "btn btn-default"
+							= button_to @button, {:action=>"updateRead", :controller=>"rankings", :name=>"Article 1"} , :method=>:patch, class: "btn btn-default"

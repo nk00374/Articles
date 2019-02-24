@@ -11,23 +11,23 @@
 Ranking.delete_all
 
 #Repopulates the database
-Ranking.create(name:"Article 1",
+Ranking.create!(name:"Article 1",
 			   rank: 0,
 			   read: false)
 
-Ranking.create(name:"Article 2",
+Ranking.create!(name:"Article 2",
 			   rank: 0,
 			   read: false)
 
-Ranking.create(name:"Article 3",
+Ranking.create!(name:"Article 3",
 			   rank: 0,
 			   read: false)
 
-Ranking.create(name:"Article 4",
+Ranking.create!(name:"Article 4",
 			   rank: 0,
 			   read: false)
 
-Ranking.create(name:"Article 5",
+Ranking.create!(name:"Article 5",
 			   rank: 0,
 			   read: false)
 

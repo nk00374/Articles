@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   patch '/stats', to: 'rankings#updateRank', as: 'article_rank'	
-  patch '/stats/:id', to: 'rankings#updateRead', as: 'article_read'	
+  patch '/stats/:name', to: 'rankings#updateRead', as: 'article_read'	
   get '/stats', to:'rankings#stats', as: 'stats'
   get '/article#1', to:'articles#article1', as: 'article1'
   get '/article#2', to:'articles#article2', as: 'article2'

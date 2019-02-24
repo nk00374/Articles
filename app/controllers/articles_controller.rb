@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   
 
   def article1
-    @ranking = Ranking.find(1)
+    @ranking = Ranking.where(name: "Article 1").first
     if (@ranking.read) 
       @button = I18n.t 'articles.read'
     else
@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
   end
 
   def article2
-     @ranking = Ranking.find(2)
+    @ranking = Ranking.where(name: "Article 2").first
     if (@ranking.read) 
       @button = I18n.t 'articles.read'
     else
@@ -56,7 +56,7 @@ class ArticlesController < ApplicationController
   end
 
   def article3
-     @ranking = Ranking.find(3)
+    @ranking = Ranking.where(name: "Article 3").first
     if (@ranking.read) 
       @button = I18n.t 'articles.read'
     else
@@ -67,7 +67,7 @@ class ArticlesController < ApplicationController
   end
 
   def article4
-    @ranking = Ranking.find(4)
+    @ranking = Ranking.where(name: "Article 4").first
     if (@ranking.read) 
       @button = I18n.t 'articles.read'
     else
@@ -78,7 +78,7 @@ class ArticlesController < ApplicationController
   end
 
   def article5
-    @ranking = Ranking.find(5)
+    @ranking = Ranking.where(name: "Article 5").first
     if (@ranking.read) 
       @button = I18n.t 'articles.read'
     else

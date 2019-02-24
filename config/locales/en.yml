@@ -42,13 +42,23 @@ en:
       article5: "Article 5"
       stats: "Rankings"
   articles:
-    read: "Read"
-    not_read: "Unmark as read"
+    read: "Unmark as read"
+    not_read: "Finished Reading"
+    article1:
+      article: "Article 1"
+    article2:
+      article: "Article 2"
+    article3:
+      article: "Article 3"
+    article4:
+      article: "Article 4"
+    article5:
+      article: "Article 5"
   rankings:
     clear: "Clear all"
     stats:
       info: "The order of the articles is set  by the user"
       submit: "Set Rating"
-      read: ", Marked as Read"      
-      not_read: ", Haven't read this yet"          
+      read: "Marked as Read"      
+      not_read: "Haven't read this yet"          
       instructions: " Set the order of the articles here"

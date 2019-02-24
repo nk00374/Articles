@@ -13,12 +13,12 @@
     #navbar-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         -#Links that is in my navbar
-        %li= link_to t('.article1'), article1_path
-        %li= link_to t('.article2'), article2_path
-        %li= link_to t('.article3'), article3_path
-        %li= link_to t('.article4'), article4_path
-        %li= link_to t('.article5'), article5_path
-        %li= link_to t('.stats'), stats_path
+        %li.tab= link_to t('.article1'), article1_path, class: "underlined"
+        %li.tab= link_to t('.article2'), article2_path
+        %li.tab= link_to t('.article3'), article3_path
+        %li.tab= link_to t('.article4'), article4_path
+        %li.tab= link_to t('.article5'), article5_path
+        %li.tab= link_to t('.stats'), stats_path
 -#alerts and notices
 .container#flash
   -flash.each do |name,msg|

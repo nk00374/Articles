@@ -6,11 +6,6 @@ class RankingsController < ApplicationController
     @list = Ranking.order(rank: :desc)
   end
 
-  def reset
-    Ranking.destroy_all
-    Rails.application.load_seed
-  end
-
   def updateRead
     if (@ranking.read) 
       @ranking.update_attribute(:read,false)
@@ -22,8 +17,8 @@ class RankingsController < ApplicationController
 
    def updateRank 
     @rank = params[:set][:rank]
-    @id = params[:set][:id]
-    @ranking = Ranking.find(@id)
+    @name = params[:set][:name]
+    @ranking = Ranking.where(name: @name).first
     @ranking.update_attribute(:rank, @rank)
     redirect_to stats_path
   end
@@ -40,7 +35,7 @@ class RankingsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_ranking
-      @ranking = Ranking.find(params[:id])
+      @ranking = Ranking.where(name: params[:name]).first
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
